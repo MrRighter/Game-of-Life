@@ -3,7 +3,7 @@ import base64
 from io import BytesIO
 
 
-class Pic_GoL_Button:
+class PicGoLButton:
     def __init__(self, x, y, width, height, image_encoded, hover_image_encoded, pushing_hover_image_encoded):
         self.x = x
         self.y = y

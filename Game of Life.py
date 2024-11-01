@@ -6,7 +6,7 @@ import io
 
 import pygame
 
-from Class_GoL_Button import Pic_GoL_Button
+from Class_GoL_Button import PicGoLButton
 from button_str_codes import *
 from font_str_code import *
 
@@ -24,8 +24,8 @@ W, H = WIDTH // TILE, HEIGHT // TILE
 next_field = [[0 for i in range(W)] for j in range(H)]
 current_field = [[random.randint(0, 1) for i in range(W)] for j in range(H)]
 
-start_stop_button = Pic_GoL_Button(115, 20, 104, 64, start_stop1, start_stop2, start_stop3)
-options_button = Pic_GoL_Button(20, 20, 64, 64, options1, options2, options3)
+start_stop_button = PicGoLButton(115, 20, 104, 64, start_stop1, start_stop2, start_stop3)
+options_button = PicGoLButton(20, 20, 64, 64, options1, options2, options3)
 
 decoded_font_data = base64.b64decode(pixel_font_code)
 font_stream = io.BytesIO(decoded_font_data)
