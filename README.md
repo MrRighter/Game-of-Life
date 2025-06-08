@@ -1,13 +1,15 @@
 # Game-of-Life
 
-Hello everyone. This is my first game written in Python using Pygame.
+[![English](https://img.shields.io/badge/Translate-English-success?style=for-the-badge&color=1e40af)](README.en.md)
 
-It's quite interesting, although it may not be for everyone. It doesn't have exciting gameplay, but it does have interesting patterns and shapes, which in turn make certain designs. (I won't bore you, you can read all about it yourself on wikipedia). Also on the confines of the internet you can find various infinite loops, draw and watch them move / evolve / behave. One such is "Gosper glider gun" (https://studme.org/htm/img/33/5860/planernoe-ruzhe-gospera.png).
+### Всем привет. Это моя первая игра, написанная на Python с использованием Pygame.
 
-How to use:  
-• it is possible to draw cells yourself (left mouse button) and erase (right mouse button). if you press a key and start driving, there will be an uninterrupted trace (or erasure depending on the key);  
-• you can draw or erase only when the game is paused;  
-• when the game is paused, you cannot open the additional menu of actions. you must "start" the game;  
-• "pattern filling" is added for nothing, it is not what I described above.
+Игра «Жизнь» — клеточный автомат, придуманный английским математиком Джоном Конвеем в 1970 году. Это игра без игроков, в которой человек создаёт начальное состояние, а потом лишь наблюдает за её развитием. В игре можно создать процессы с полнотой по Тьюрингу, что позволяет реализовать любую машину Тьюринга.
 
-I would like to note that the .exe file for windows is already in the directory, but in case of what you can always customize everything (pyinstaller is also there). By the way, the game has no icon, I didn't invent it). And base64 is also present, if you want to remake pictures for buttons.
+Также на просторах интернета можно найти различные "бесконечные" узоры, нарисовать их и посмотреть, как они движутся. Одним из таких является [Gosper glider gun](https://studme.org/htm/img/33/5860/planernoe-ruzhe-gospera.png).
+
+### Как взаимодействовать:  
+• можно самому рисовать ячейки (левая кнопка мыши) и стирать (правая кнопка мыши). если нажать клавишу и начать движение, то будет непрерывный след (или стирание, в зависимости от клавиши);  
+• рисовать или стирать можно только тогда, когда игра поставлена на паузу;  
+• когда игра поставлена на паузу, нельзя открыть дополнительное меню действий. необходимо «запустить» игру;  
+• «pattern filling» добавлена просто так, это не то, что я описал выше.

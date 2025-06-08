@@ -10,7 +10,6 @@ from Class_GoL_Button import PicGoLButton
 from button_str_codes import *
 from font_str_code import *
 
-
 pygame.init()
 
 screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
@@ -22,7 +21,7 @@ TILE = 12
 W, H = WIDTH // TILE, HEIGHT // TILE
 
 next_field = [[0 for i in range(W)] for j in range(H)]
-current_field = [[random.randint(0, 1) for i in range(W)] for j in range(H)]
+current_field = [[random.randint(0, 1) for _ in range(W)] for _ in range(H)]
 
 start_stop_button = PicGoLButton(115, 20, 104, 64, start_stop1, start_stop2, start_stop3)
 options_button = PicGoLButton(20, 20, 64, 64, options1, options2, options3)
@@ -43,7 +42,7 @@ def patterns_filling():
     global current_pattern_index
     current_patterns_fields = [
         [[1 if i == W // 2 or j == H // 2 else 0 for i in range(W)] for j in range(H)],
-        [[1 if not i % 9 else 0 for i in range(W)] for j in range(H)],
+        [[1 if not i % 9 else 0 for i in range(W)] for _ in range(H)],
         [[1 if not (2 * i + j) % 4 else 0 for i in range(W)] for j in range(H)],
         [[1 if not (i * j) % 22 else 0 for i in range(W)] for j in range(H)]
     ]
@@ -136,13 +135,16 @@ while True:
         back_field_width1, back_field_height1 = back_field_width2 + 70, back_field_height2 + 110
         back_field_x1, back_field_y1 = (WIDTH - back_field_width1) // 2, (HEIGHT - back_field_height1) // 2
 
-        back_field1 = pygame.draw.rect(screen, "#e4e4e4", pygame.Rect(back_field_x1, back_field_y1, back_field_width1, back_field_height1))
-        back_field2 = pygame.draw.rect(screen, "#c4c4c4", pygame.Rect(back_field_x2, back_field_y2, back_field_width2, back_field_height2))
+        back_field1 = pygame.draw.rect(screen, "#e4e4e4",
+                                       pygame.Rect(back_field_x1, back_field_y1, back_field_width1, back_field_height1))
+        back_field2 = pygame.draw.rect(screen, "#c4c4c4",
+                                       pygame.Rect(back_field_x2, back_field_y2, back_field_width2, back_field_height2))
 
         for i, text in enumerate(button_texts, start=1):
             button_y = start_y + (i - 1) * (button_height + button_margin)
             button_x = (WIDTH - button_width) // 2
-            button = text_gol_button(screen, button_x, button_y, button_width, button_height, text, "#0a0a0a", "#949494", "#a4a4a4", "#848484")
+            text_gol_button(screen, button_x, button_y, button_width, button_height, text,
+                                     "#0a0a0a", "#949494", "#a4a4a4", "#848484")
 
             mouse_pos = pygame.mouse.get_pos()
             if button_x < mouse_pos[0] < button_x + button_width and button_y < mouse_pos[1] < button_y + button_height:
