@@ -10,7 +10,7 @@ You can also find various “infinite” patterns on the vastness of the Interne
 
 ---
 
-![watch the video](https://github.com/MrRighter/Game-of-Life/releases/download/v1.0.0/Game-of-Live_Demo.mp4)
+![watch the video](https://github.com/MrRighter/Game-of-Life/assets/123870295/Game-of-Live_Demo.mp4)
 
 ---
 
