@@ -1,6 +1,6 @@
 # Game-of-Life
 
-[![English](https://img.shields.io/badge/Translate-English-success?style=for-the-badge&color=1e40af)](README.en.md)
+[![English](https://img.shields.io/badge/Translate-English-success?style=for-the-badge&color=1e40af)](other/README.en.md)
 
 ### Всем привет. Это моя первая игра, написанная на Python с использованием Pygame. 🐍
 
@@ -10,7 +10,7 @@
 
 ---
 
-https://github.com/user-attachments/assets/a989bd18-fe6e-424e-b0d7-5240dfe56ac7
+![demo wideo](other/Game-of-Live_Demo.mp4)
 
 ---
 
