@@ -10,7 +10,7 @@
 
 ---
 
-![demo wideo](other/Game-of-Live_Demo.mp4)
+https://github.com/user-attachments/assets/a989bd18-fe6e-424e-b0d7-5240dfe56ac7
 
 ---
 
